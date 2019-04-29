@@ -179,7 +179,7 @@ li {
   width: 920px;
   padding: 15px 50px;
   margin: 0 auto;
-  line-height: 1.1;
+  line-height: 1.2;
   color: black;
   font-size: 1.5rem;
 }
@@ -230,7 +230,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: lightgrey;
+  color: grey;
   font-size: 1.6rem;
   padding: 5px 0;
   border: 1px solid transparent;
@@ -331,7 +331,7 @@ small {
 
   .logo {
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 20px 0;
     display: block;
   }
 
@@ -353,5 +353,133 @@ small {
 }
 
 @media screen and (max-width: 500px) {
- 
+  button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+
+  ul {
+    text-decoration: none;
+  }
+
+  ul li {
+    text-align: center;
+    list-style: none;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+
+  }
+
+  .container {
+    padding: 10px 0;
+    width: 100%;
+    color: black;
+  }
+
+  .menu-box,
+  nav,
+  .hero-box,
+  section {
+    flex-direction: column;
+  }
+
+  .menu-box,
+  .hero-box {
+    flex-flow: column-reverse;
+  }
+
+  .box {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+
+  .services-page .box {
+    margin: 0;
+  }
+
+  .services-page .box:nth-child(even) {
+    background: white;
+  }
+
+  .services-page .box:nth-child(even) button {
+    background: black;
+    color: white;
+  }
+  .services-page .box:last-child {
+    border-bottom: 1px solid grey;
+  }
+
+  .info {
+    padding: 25px;
+    background-color: lavender;
+  }
+
+  .logo {
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .logo img {
+    margin: 0 auto;
+  }
+
+  nav {
+    border-top: 1px solid black;
+    margin: 10px 0 0px;
+    max-width: 100%;
+  }
+
+  .services-page nav {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    font-size: 2rem;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  nav a:hover {
+    background: black;
+    border: 1px solid black;
+    color: white;
+  }
+
+  .hero-img {
+    margin-bottom: 30px;
+  }
+
+  .innovation {
+    width: 100%;
+  }
+
+  .innovation button {
+    font-size: 1.4rem;
+  }
+
+  .hero-img,
+  .services-header-img,
+  .services-info-img {
+    display: none;
+  }
+
+  .middle-img {
+    padding: 0 5%;
+  }
+
+  .contact {
+    margin-top: 20px;
+  }
+
+  .copyright {
+    margin-top: 10px;
+  }
 }
