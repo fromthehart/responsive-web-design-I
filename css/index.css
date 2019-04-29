@@ -205,13 +205,17 @@ button {
   color: black;
 }
 
+.box.shaded {
+  width: 48%;
+  margin: 10px 5px;
+}
+
 .half-box {
   width: 48%;
 }
 
 .third-box {
-  width: 30%;
-  min-width: 250px;
+  width: 33%;
 }
 
 .box-btn {
@@ -283,16 +287,6 @@ nav a:hover {
 }
 
 /* Midsection */
-.features,
-.about {
-  width: 49.5%;
-}
-
-.services,
-.product,
-.vision {
-  width: 33%;
-}
 
 .middle-img {
   display: block;
@@ -355,8 +349,12 @@ small {
     display: none;
   }
 
-  .third-box {
-    width: 33%;
+.half-box, .box.shaded {
+    width: 45%;
+  }
+
+  .third-box p {
+    padding: 0 15% 0 0;
   }
 }
 
@@ -398,24 +396,19 @@ small {
     flex-flow: column-reverse;
   }
 
-  .box {
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
+  .box, .half-box, .box.shaded {
     width: 100%;
+  }
+
+  .box {
+    padding-left: 5%;
+    padding-right 5%;
   }
 
   .services-page section {
     padding: 0 5%;
   }
 
-  .services-page .box {
-    margin: 20px;
-  } 
-
-  .services-page .shaded {
-    border: 1px solid grey;
-  }
 
   .logo {
     margin: 0 auto;
@@ -464,7 +457,8 @@ small {
 
   .hero-img,
   .services-header-img,
-  .services-info-img {
+  .services-info-img,
+  .box:last-of-type {
     display: none;
   }
 
