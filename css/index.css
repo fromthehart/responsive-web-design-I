@@ -175,8 +175,16 @@ li {
   margin-top: 12px;
 }
 
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
 .container {
-  width: 920px;
+  width: 850px;
   padding: 15px 50px;
   margin: 0 auto;
   line-height: 1.2;
@@ -193,7 +201,7 @@ li {
   margin: 20px 0;
   padding: 20px;
   background-color: lavender;
-  border: 1px solid grey;
+  border: 1px solid black;
   color: black;
 }
 
@@ -224,7 +232,7 @@ section {
 }
 
 nav {
-  width: 575px;
+  width: 525px;
   align-items: center;
 }
 
@@ -302,7 +310,7 @@ nav a:hover {
 }
 
 small {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .services-page p {
@@ -366,7 +374,7 @@ small {
   ul li {
     text-align: center;
     list-style: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: italic;
     font-weight: bold;
 
@@ -394,29 +402,19 @@ small {
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    padding: 0 5%;
     width: 100%;
   }
 
+  .services-page section {
+    padding: 0 5%;
+  }
+
   .services-page .box {
-    margin: 0;
-  }
+    margin: 20px;
+  } 
 
-  .services-page .box:nth-child(even) {
-    background: white;
-  }
-
-  .services-page .box:nth-child(even) button {
-    background: black;
-    color: white;
-  }
-  .services-page .box:last-child {
-    border-bottom: 1px solid grey;
-  }
-
-  .info {
-    padding: 25px;
-    background-color: lavender;
+  .services-page .shaded {
+    border: 1px solid grey;
   }
 
   .logo {
